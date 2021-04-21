@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Final Exam Part B</title>
+    <link rel="stylesheet" href="stylesPartB.css" />
+
+    <!--    Name       = Your Name
+            Student ID =              / -->
+</head>
+
+<body>
+    <h1> Final Exam Part B</h1>
+    <h1>Replace with Student ID and Student Name</h1>
+    <table>
+        <tr>
+            <th>Question 1</th>
+            <th>Question 2</th>
+            <th>Question 3</th>
+        </tr>
+        <tr>
+            <!-- <Question 1 -->
+
+            <td>
+                <h2> Turo Car Rentals</h2>
+                <fieldset id="deliveryinfo">
+                    <legend>Customer Information</legend>
+
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" value="">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" value="">
+                    <label for="payment">Payment Method</label>
+                    <select id="payment" name="payment">
+                        <option>Credit Card</option>
+                        <option>Debit Card</option>
+                        <option>Cash</option>
+                        <option>Pay Pal</option>
+                    </select>
+                </fieldset><br>
+
+                <fieldset id="rentalinfo">
+                    <legend>Car Rental</legend>
+
+                    <fieldset id="category" name="category">
+                        <legend>Category</legend>
+                        <input type="radio" name="utility" id="car" value="100" />
+                        <label for="car">Sedan</label><br>
+                        <input type="radio" name="utility" id="truck" value="120" />
+                        <label for="truck">Pick-up Truck</label><br>
+                        <input type="radio" name="utility" id="suv" value="140" />
+                        <label for="suv">Sports Utility Vehicle</label><br>
+                        <input type="radio" name="utility" id="recv" value="160" />
+                        <label for="recv">Recreational Vehicle</label><br>
+                    </fieldset>
+
+                    <fieldset id="optionbox">
+                        <legend>Option(s)</legend>
+                        <input type="checkbox" id="insurance" name="options" value="50" />
+                        <label for="insurance">Accidental Insurance</label><br>
+                        <input type="checkbox" id="child seat" name="options" value="20" />
+                        <label for="child seat">Child Seat</label><br>
+                        <input type="checkbox" id="fuel" name="options" value="40" />
+                        <label for="fuel">Fuel Top-Up</label><br>
+                        <input type="checkbox" id="navigation" name="options" value="10" />
+                        <label for="navigation">Navigation</label><br>
+                        <input type="checkbox" id="entertainment" name="options" value="20" />
+                        <label for="entertainment">Display Screen</label><br>
+                        <input type="checkbox" id="roadside" name="options" value="30" />
+                        <label for="roadside">Roadside Assistance</label>
+
+                    </fieldset>
+                </fieldset>
+
+                <fieldset id="submitbutton">
+                    <legend>Rental Details</legend>
+                    <input type="button" id="bookcar" value="Rent a Car" />
+                    <p id="rentaldetails"> Show the rental details here: </p>
+                </fieldset>
+
+
+            </td>
+			<!-- END OF QUESTION 1 -->
+
+            <!-- Question 2 -->
+
+            <td>
+                <h2> Seashore Supplies </h2>
+
+                <!--Name of Item can be Swimsuit, Beach Chair, Bodyboard, Fins and Snorkel, Mesh/Dive Bag, Saltwater Kayak, Slackline, Rashguard, Umbrella -->
+                <label for="item">Name of Item</label>
+                <input type="text" name="item" id="item" size="30"><br><br>
+                <input type="button" id="additem" value="Add Item">
+                <input type="button" id="removeitem" value="Delete Item">
+
+                <p><strong>You Selected:</strong></p>
+                <select name="group" id="selectedItems" size="5" style="width: 150px">
+                    <!-- Display the Selected Items Here -->
+                </select>
+
+                <p> Enter Number of Minutes for the Rental: <input type="number" name="minutes" id="minutes" value="0"
+                        min="1" /></p>
+                <p> Your Rental Amount is $<input type="text" name="amount" id="amount" size="6" value=""
+                        readonly="readonly" class="total" /></p>
+
+            </td>
+			<!-- END OF QUESTION 2 -->
+			
+            <!-- Question 3 -->
+
+            <td>
+
+                <main>
+
+                    <h2 id="caption">Tulip Festival</h2>
+                    <img id="slide" src="images/image1.jpg" alt="">
+                    <div id="slides">
+                        <img src="images/image1.jpg" alt="Happy Spring!!">
+                        <img src="images/image2.jpg" alt="Tulips Red">
+                        <img src="images/image3.jpg" alt="Tulips are tops.">
+                        <img src="images/image4.jpg" alt="This is like a dream.">
+                        <img src="images/image5.jpg" alt="Its tulip time!">
+                    </div>
+
+                    <br />
+                    <br />
+                    <br />
+
+                    <button id="start" type="button"> Start Show </button>
+                    <button id="stop" type="button"> Stop Show</button>
+
+
+                </main>
+
+                <!-- END OF QUESTION 3 -->
+            </td>
+        </tr>
+    </table>
+
+    <script src="solution.js"></script>
+
+</body>
+
+</html>

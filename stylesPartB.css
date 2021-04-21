@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(183, 226, 208);
+    font-size: 1.2em;
+}
+
+  input[type="text"]{
+      width: 15em
+  }
+  fieldset select{
+      width: 15em;
+      text-align: center;
+      text-indent: 4em;
+  }
+h1{
+      text-align: center;
+  }
+table {
+    vertical-align: top;
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    }
+ td, th{
+    vertical-align: top;
+    text-align: center;
+    width: 33%;
+    border: 1px solid black;
+}
+th{
+    font-size: 1.5em;
+    background-color: rgb(87, 102, 91);
+}
+img {
+	height: 250px;
+}
+#slides img {
+	display: none;
+}
+fieldset#optionbox, #category{
+    text-align: left;
+}
+label {
+    float: left;
+    width: 10em;
+}
