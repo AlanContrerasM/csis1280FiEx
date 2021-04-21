@@ -1,30 +1,150 @@
+/* starter css */
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #6d6d6d;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+
+}
+
+
 
 /* Centered Layout */
 
+#container{
+    background-color: white;
+    width: 95%;
+    margin: auto;
+    box-shadow: 5px 5px 20px 20px #000a;
+}
 
 
 
 /* Header styles */
-
+header{
+    text-align: right;
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 200px;
+    color: white;
+    font-size: 3em;
+}
 
 
 
 /* Navigation list styles */
 
+nav{
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    background-color: #b1613e;
+    color: white;
+    /*to center nav horizontally*/
+    display: grid;
+    justify-items: center;
+}
 
+nav ul{
+    list-style-type: none;
+    overflow: auto;
+    margin: 0;
+    padding-inline-start: 0;
+    
+}
+nav ul li{
+    display: inline;
+    
+}
+nav a{
+    text-decoration: none;
+    display: inline-block;
+    padding: .8em;
+    padding-top: 1em;
+    text-align: center;
+    font-size: .9em;
+    cursor: pointer;
+}
 
+nav a:hover{
+    color: #363636 !important;
+    /*important just so it looks pretty when hovering*/
+}
+
+nav a:visited{
+    color: blue;
+}
+
+/*main styles for creating two column layout*/
+main{
+    background-color: white;
+    /* display: flex;
+    flex-direction: row; */
+}
 /* Article Styles */
+#column1{
+    /* flex: 70%; */
+    width: 63%;
+    float: left;
+    padding-left: 1em;
+    padding-right: 2em;
+}
+#column1 h1{
+    color: #b1613e;
+    font-size: 2.5em;
+    letter-spacing: .03em;
+    line-height: 1.2em;
+}
 
+#column1 p{
+    line-height: 1.4em;
+    margin-bottom: 15px;
+}
 
+.specialText{
+    font-style: italic;
+    color: #b1613e;
+}
 
 /* Section Styles */
+#column2{
+    /* flex: 30%; */
+    float: right;
+    width: 28%;
+    border: 1px solid #b1613e;
+    border-radius: 15px;
+    margin-top: 2em;
+    padding: 1em;
+    margin-right: 1em;
+    
+}
 
+#column2 h2{
+    font-size: 1em;
+}
 
-
-/* Aside Styles */
+#column2 p{
+    border-left: 4px solid #b1613e;
+    margin-left: 1em;
+    font-size: .8em;
+}
 
 
 
 /* Footer styles */   
 
-
+footer{
+    clear: both;
+    text-align: center;
+    font-size: .9em;
+    color: white;
+    background-image: linear-gradient(to bottom, #b1613e, black);
+}
