@@ -57,7 +57,6 @@ nav ul{
     list-style-type: none;
     overflow: auto;
     margin: 0;
-    padding-inline-start: 0;
     
 }
 nav ul li{
